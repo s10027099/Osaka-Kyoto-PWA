@@ -70,7 +70,7 @@ header h1 {
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     margin-bottom: 25px;
     padding: 20px;
-    overflow: hidden; /* 確保內邊距不影響圓角 */
+    overflow: hidden; 
 }
 
 .day-card h2 {
@@ -83,18 +83,63 @@ header h1 {
     margin-bottom: 20px;
 }
 
-/* 天氣 Placeholder */
+/* ================================================= */
+/* 3.1. 3天橫向天氣預報樣式 (新增/修改) */
+/* ================================================= */
+
 .weather-box {
-    background-color: #F0F4C3; /* 淺黃綠 */
-    padding: 8px 12px;
-    border-radius: 8px;
-    font-size: 0.9em;
+    /* 重置舊有的 weather-box 樣式 */
+    padding: 0;
     margin-bottom: 15px;
-    color: #555;
+    background-color: transparent;
 }
 
-.weather-box.warning {
-    background-color: #FFECB3; /* 暖黃色 - 提醒彈性日 */
+.three-day-forecast {
+    background-color: #E8F5E9; /* 淺抹茶綠 */
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.forecast-title {
+    font-weight: 700;
+    color: #388E3C; /* 深抹茶綠 */
+    margin-bottom: 10px;
+}
+
+.forecast-cards-wrapper {
+    display: flex;
+    justify-content: space-between; 
+    gap: 8px; 
+}
+
+.weather-day-card {
+    flex: 1 1 30%; /* 確保每張卡片佔約 30% 寬度，形成橫向 3 欄 */
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 10px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.weather-day-card h4 {
+    font-size: 0.85em;
+    font-weight: 400;
+    color: #777;
+    margin: 0 0 5px 0;
+}
+
+.weather-icon {
+    font-size: 1.6em;
+    display: block;
+    margin: 0 auto;
+}
+
+.temp {
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #333;
+    margin: 3px 0 0 0;
 }
 
 /* 單個行程項目卡片 */
