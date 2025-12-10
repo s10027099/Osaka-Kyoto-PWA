@@ -1,0 +1,21 @@
+{
+  "name": "京阪 6天5夜 🎌",
+  "short_name": "京阪旅程",
+  "description": "大阪京都 PWA 行程與工具箱",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FAF8F4",
+  "theme_color": "#FFFFFF",
+  "icons": [
+    {
+      "src": "/images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
