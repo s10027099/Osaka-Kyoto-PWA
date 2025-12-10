@@ -3,43 +3,286 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>大阪京都行 | 極簡導遊</title>
+    <title>🇯🇵 京阪極簡旅程</title>
     <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#FAF8F4">
+    <meta name="theme-color" content="#FFFFFF"> 
+    
     <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body class="minimalist-theme">
+
     <header>
-        <h1>🎌 6天5夜 京阪紀行</h1>
+        <h1>京阪 6天5夜 🎌</h1>
         <nav class="tab-bar">
-            <a href="#itinerary" class="active">行程</a>
-            <a href="#tools">工具箱</a>
+            <a href="#itinerary" class="tab-button active" data-target="itinerary-content">行程規劃</a>
+            <a href="#tools" class="tab-button" data-target="tools-content">工具箱</a>
         </nav>
     </header>
 
-    <main id="itinerary">
-        <section class="day-card">
-            <h2>Day 1: 12/20 (六)</h2>
-            <div class="weather-box">[即時天氣 Placeholder]</div>
+    <main class="content-wrapper">
+        
+        <section id="itinerary-content" class="tab-content active">
+
+            <div class="day-card">
+                <h2>Day 1: 12/20（六）✈️ 大阪 $\to$ 京都</h2>
+                <div class="weather-box">
+                    <span>☀️/☁️ **[即時天氣 Placeholder: 京都 三条]**</span>
+                </div>
+
+                <div class="item-card transport-card">
+                    <h3>✈️ 關西機場 KIX $\to$ 京都</h3>
+                    <p>CX564 抵達 (14:55)。搭乘 **JR Haruka 特急** 往京都。</p>
+                </div>
+                
+                <div class="item-card accommodation-card">
+                    <h3>🏨 住宿 Check-in</h3>
+                    <p>Prince Smart Inn Kyoto Sanjo (京都市役所前周邊)。</p>
+                    <a href="https://maps.app.goo.gl/951Hk9vFf9P6HhJ7A" target="_blank" class="nav-button">導航到飯店</a>
+                </div>
+
+                <div class="item-card food-card">
+                    <h3>🏮 晚餐/宵夜：Rokkaku ace 居酒屋</h3>
+                </div>
+            </div>
             
-            <div class="item-card sight-card">
-                <h3>✈️ 關西機場 KIX</h3>
-                <p>國泰 CX564 抵達 (14:55)</p>
+            <div class="day-card">
+                <h2>Day 2: 12/21（日）⛩️ 清水寺經典巡禮</h2>
+                <div class="weather-box">
+                    <span>☀️/☁️ **[即時天氣 Placeholder: 京都 清水寺]**</span>
+                </div>
+
+                <div class="item-card sight-card">
+                    <h3>⛩️ 清水寺 (08:00 前往)</h3>
+                    <p>參拜 **大黑天** 🙏 (求財運/開運)。早晨人少。</p>
+                    <p class="notes">**攻略重點：** <span class="must-eat">🍡 必吃：藤菜美醬油糰子、Kyo-baum 抹茶霜淇淋</span>。</p>
+                    <p class="notes">**伴手禮：** <span class="must-buy">🌶️ 必買：七味家本舖七味粉、茶の菓 (抹茶餅乾)</span>。</p>
+                    <a href="https://maps.app.goo.gl/yJ18rXgX35WJ66pP9" target="_blank" class="nav-button">導航到清水寺</a>
+                </div>
+                
+                <div class="item-card sight-card">
+                    <h3>👘 花見小路、祇園</h3>
+                    <p>感受古都風情，傍晚有機會看到藝伎。</p>
+                    <div class="sub-item food-card">
+                        <h4>🍵 點心：祇園辻利 祇園本店</h4>
+                        <p class="notes">**必點菜單：** 抹茶聖代、抹茶蛋糕。</p>
+                        <a href="https://maps.app.goo.gl/s1tKz5dKjRz145XN8" target="_blank" class="nav-button sub-nav">導航到祇園辻利</a>
+                    </div>
+                </div>
+                
+                <div class="item-card sight-card">
+                    <h3>💡 TeamLab Biovortex (17:00 抵達)</h3>
+                    <p>沉浸式數位藝術展。預計停留 3-4 小時。</p>
+                    <p class="notes">**預約代號：** <span class="important-code">請在此填寫訂票代號</span>。</p>
+                    <a href="https://maps.app.goo.gl/61tJ86X1eXhMh3y58" target="_blank" class="nav-button">導航到 TeamLab</a>
+                </div>
             </div>
 
-            <div class="item-card food-card">
-                <h3>🏮 晚餐：Rokkaku ace 居酒屋</h3>
+            <div class="day-card">
+                <h2>Day 3: 12/22（一）🚄 京都 $\to$ 大阪 & 梅田</h2>
+                <div class="weather-box">
+                    <span>☀️/☁️ **[即時天氣 Placeholder: 大阪 北濱]**</span>
+                </div>
+                
+                <div class="item-card accommodation-card">
+                    <h3>🏨 大阪住宿 Check-in</h3>
+                    <p>HOTEL FORZA OSAKA KITAHAMA (北濱)。</p>
+                    <a href="https://maps.app.goo.gl/xYx7e1b59tH5Y6Kk8" target="_blank" class="nav-button">導航到飯店</a>
+                </div>
+
+                <div class="item-card sight-card">
+                    <h3>🛍️ 梅田地區購物</h3>
+                    <p>阪急、大丸、LUCUA 等百貨區。</p>
+                    <a href="https://maps.app.goo.gl/yD3w9e4Tq2D5bY786" target="_blank" class="nav-button">導航到梅田站</a>
+                </div>
+                
+                <div class="item-card food-card">
+                    <h3>🍴 午/晚餐建議</h3>
+                    <p>🥢 **備長鰻魚飯** (梅田)；🍰 **Habrs** (水果千層，<span class="must-eat">必點菜單</span>)。</p>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <h2>Day 4: 12/23（二）🌊 伊根舟屋 (天氣彈性日 A)</h2>
+                <div class="weather-box warning">
+                    <span>☀️/☁️ **[即時天氣 Placeholder: 伊根/天橋立]**</span>
+                </div>
+                
+                <div class="item-card transport-card">
+                    <h3>🚄 長途交通：大阪 $\to$ 伊根</h3>
+                    <p>JR $\to$ 福知山 $\to$ 丹後鐵道 $\to$ 天橋立 $\to$ **丹海巴士** $\to$ 伊根 (單程約 4 小時)。</p>
+                    <p class="notes">**攻略重點：** 考慮購買 **JR 關西廣域鐵路周遊券**。</p>
+                </div>
+                
+                <div class="item-card sight-card">
+                    <h3>🚢 伊根舟屋群</h3>
+                    <p>「日本海之京都」。**必玩：** 🛥️ 搭乘**海上TAXI**或**遊覽船**餵食海鷗。</p>
+                    <a href="https://maps.app.goo.gl/GzD9N4F6wYvYy57m9" target="_blank" class="nav-button">導航到伊根</a>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <h2>Day 5: 12/24（三）🍁 勝尾寺 + 心齋橋 (彈性日 B)</h2>
+                <div class="weather-box">
+                    <span>☀️/☁️ **[即時天氣 Placeholder: 勝尾寺/心齋橋]**</span>
+                </div>
+                
+                <div class="item-card sight-card">
+                    <h3>🙏 勝尾寺 (上午)</h3>
+                    <p>滿山遍野的「**勝利達摩**」。阪急巴士前往。</p>
+                    <p class="notes">**攻略重點：** 購買達摩後，寫願望畫**右眼**，達成後畫**左眼**奉還。</p>
+                    <p class="notes">**伴手禮：** <span class="must-buy">達摩御守、達摩詩籤</span>。</p>
+                    <a href="https://maps.app.goo.gl/fP4Ea372vP75TzL77" target="_blank" class="nav-button">導航到勝尾寺</a>
+                </div>
+                
+                <div class="item-card sight-card">
+                    <h3>🛍️ 心齋橋逛街 (下午/晚上)</h3>
+                    <p>逛街、難波版八神社。</p>
+                    <a href="https://maps.app.goo.gl/k9822kS7Gj94W73c7" target="_blank" class="nav-button">導航到心齋橋</a>
+                </div>
+                
+                <div class="item-card food-card">
+                    <h3>🐙 晚餐/美食探索</h3>
+                    <p>**必吃美食：** 達摩炸串、心齋橋宮田麵兒 (沾麵)、Takoyaki wanaka/Kukuru (章魚燒)。</p>
+                    <p class="notes">**伴手禮：** <span class="must-buy">🍮 CANELÉ du JAPON 可麗露</span>。</p>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <h2>Day 6: 12/25（四）✈️ 啟程返家</h2>
+                <div class="weather-box">
+                    <span>☀️/☁️ **[即時天氣 Placeholder: 大阪 北濱]**</span>
+                </div>
+                
+                <div class="item-card food-card">
+                    <h3>☕ 早午餐建議</h3>
+                    <p>🥑 **Neel coffee** (中崎町) 或 **堺筋俱樂部** (北濱)。</p>
+                </div>
+
+                <div class="item-card transport-card">
+                    <h3>✈️ 前往關西機場 KIX T1</h3>
+                    <p>預計 13:00 出發。航班 CX565 (16:15 離境)。</p>
+                </div>
+            </div>
+
+        </section>
+        
+        <section id="tools-content" class="tab-content" style="display:none;">
+
+            <div class="tools-section">
+                <h3>✈️ 航班與住宿資訊</h3>
+                <table class="info-table">
+                    <tr><th>去程</th><td>CX564 桃園 $\to$ KIX (11:15-14:55)</td></tr>
+                    <tr><th>回程</th><td>CX565 KIX $\to$ 桃園 (16:15-18:30)</td></tr>
+                    <tr><th>京都住宿</th><td>Prince Smart Inn Kyoto Sanjo</td></tr>
+                    <tr><th>大阪住宿</th><td>HOTEL FORZA OSAKA KITAHAMA</td></tr>
+                    <tr><th>預約代號</th><td class="important-code">請在此填寫您的代號</td></tr>
+                </table>
             </div>
             
-            <div class="navigation-link">
-                <a href="[Google Maps URL]" target="_blank" class="nav-button">導航去飯店</a>
+            <div class="tools-section">
+                <h3>🚨 緊急聯絡電話</h3>
+                <table class="info-table">
+                    <tr><th>日本報警</th><td>110</td></tr>
+                    <tr><th>日本救護/消防</th><td>119</td></tr>
+                    <tr><th>駐大阪辦事處</th><td>+81-6-6440-3600</td></tr>
+                    <tr><th>信用卡掛失</th><td class="important-code">請填寫您的銀行電話</td></tr>
+                </table>
+            </div>
+
+            <div class="tools-section">
+                <h3>💰 記帳/預算表 (Local Storage 離線版)</h3>
+                <div id="budget-summary" class="summary-box">
+                    <p>總預算: ¥0 / 總支出: ¥0</p>
+                </div>
+                
+                <div class="input-form">
+                    <input type="number" id="amount" placeholder="金額 (¥)" required>
+                    <input type="text" id="description" placeholder="項目/備註">
+                    <select id="category">
+                        <option value="food">餐飲</option>
+                        <option value="transport">交通</option>
+                        <option value="shopping">購物</option>
+                        <option value="misc">其他</option>
+                    </select>
+                    <button id="add-expense" class="nav-button">新增支出</button>
+                </div>
+                
+                <ul id="expense-list" class="expense-list">
+                    </ul>
             </div>
         </section>
-        </main>
 
-    <section id="tools" style="display:none;">
-        </section>
-    
-    <script src="app.js"></script>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('.tab-button');
+            const contents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = e.target.getAttribute('data-target');
+
+                    // 移除所有 active 狀態
+                    tabs.forEach(t => t.classList.remove('active'));
+                    contents.forEach(c => c.style.display = 'none');
+
+                    // 設定選中的 tab 和內容為 active
+                    e.target.classList.add('active');
+                    document.getElementById(targetId).style.display = 'block';
+                });
+            });
+            
+            // --- 簡易離線記帳功能 (使用 Local Storage) ---
+            const expenseList = document.getElementById('expense-list');
+            const addExpenseBtn = document.getElementById('add-expense');
+            const amountInput = document.getElementById('amount');
+            const descriptionInput = document.getElementById('description');
+            const categorySelect = document.getElementById('category');
+            
+            let expenses = JSON.parse(localStorage.getItem('travelExpenses')) || [];
+            
+            function renderExpenses() {
+                expenseList.innerHTML = '';
+                let total = 0;
+                
+                expenses.forEach((exp, index) => {
+                    total += exp.amount;
+                    const li = document.createElement('li');
+                    li.innerHTML = `
+                        <span class="category-${exp.category}">[${exp.category}]</span> 
+                        ${exp.description} 
+                        <span class="expense-amount">¥ ${exp.amount.toLocaleString()}</span>
+                    `;
+                    expenseList.appendChild(li);
+                });
+                
+                document.getElementById('budget-summary').innerHTML = 
+                    `<p>總預算: ¥[請手動填寫] / 總支出: ¥${total.toLocaleString()}</p>`;
+                
+                localStorage.setItem('travelExpenses', JSON.stringify(expenses));
+            }
+            
+            addExpenseBtn.addEventListener('click', () => {
+                const amount = parseInt(amountInput.value);
+                const description = descriptionInput.value || categorySelect.value;
+                const category = categorySelect.value;
+                
+                if (amount > 0) {
+                    expenses.push({ amount, description, category, timestamp: Date.now() });
+                    amountInput.value = '';
+                    descriptionInput.value = '';
+                    renderExpenses();
+                } else {
+                    alert('請輸入有效金額');
+                }
+            });
+            
+            renderExpenses(); // 載入時渲染一次
+        });
+    </script>
 </body>
 </html>
